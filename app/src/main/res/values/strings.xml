@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">E=mc²</string>
+    <string name="button.finish">FINISH</string>
+    <string name="button.next">NEXT</string>
+    <string name="button.skip">SKIP</string>
+
+
+    <string name="account_balance">Account Balance</string>
+    <string name="balance_currency">$</string>
+    <string name="balance_amount">524.99</string>
+    <string name="url">10.194.26.215/login.php/</string>
+</resources>
