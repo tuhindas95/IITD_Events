@@ -144,7 +144,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
-        startActivity(new Intent(this, EventPost.class));
+        startActivity(new Intent(this, MainActivity.class));
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         finish();
     }

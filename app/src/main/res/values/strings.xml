@@ -5,6 +5,8 @@
     <string name="button.skip">SKIP</string>
 
 
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
     <string name="account_balance">Account Balance</string>
     <string name="balance_currency">$</string>
     <string name="balance_amount">524.99</string>

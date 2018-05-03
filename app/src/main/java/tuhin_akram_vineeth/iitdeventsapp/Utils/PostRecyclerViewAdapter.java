@@ -12,14 +12,14 @@ import tuhin_akram_vineeth.iitdeventsapp.R;
 /**
  * Created by florentchampigny on 24/04/15.
  */
-public class TestRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class PostRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     List<Object> contents;
 
     static final int TYPE_HEADER = 0;
     static final int TYPE_CELL = 1;
 
-    public TestRecyclerViewAdapter(List<Object> contents) {
+    public PostRecyclerViewAdapter(List<Object> contents) {
         this.contents = contents;
     }
 
@@ -29,7 +29,7 @@ public class TestRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
             case 0:
                 return TYPE_HEADER;
             default:
-                return TYPE_CELL;
+                return TYPE_HEADER;
         }
     }
 
@@ -45,13 +45,13 @@ public class TestRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
         switch (viewType) {
             case TYPE_HEADER: {
                 view = LayoutInflater.from(parent.getContext())
-                        .inflate(R.layout.list_item_card_big, parent, false);
+                        .inflate(R.layout.list_item_card_post, parent, false);
                 return new RecyclerView.ViewHolder(view) {
                 };
             }
             case TYPE_CELL: {
                 view = LayoutInflater.from(parent.getContext())
-                        .inflate(R.layout.list_item_card_small, parent, false);
+                        .inflate(R.layout.list_item_card_post, parent, false);
                 return new RecyclerView.ViewHolder(view) {
                 };
             }

@@ -12,14 +12,14 @@ import tuhin_akram_vineeth.iitdeventsapp.R;
 /**
  * Created by florentchampigny on 24/04/15.
  */
-public class ChatRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class SavedRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     List<Object> contents;
 
     static final int TYPE_HEADER = 0;
     static final int TYPE_CELL = 1;
 
-    public ChatRecyclerViewAdapter(List<Object> contents) {
+    public SavedRecyclerViewAdapter(List<Object> contents) {
         this.contents = contents;
     }
 
@@ -27,7 +27,7 @@ public class ChatRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
     public int getItemViewType(int position) {
         switch (position) {
             case 0:
-                return TYPE_HEADER;
+                return TYPE_CELL;
             default:
                 return TYPE_CELL;
         }
@@ -45,7 +45,7 @@ public class ChatRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
         switch (viewType) {
             case TYPE_HEADER: {
                 view = LayoutInflater.from(parent.getContext())
-                        .inflate(R.layout.list_item_card_big, parent, false);
+                        .inflate(R.layout.list_item_card_small, parent, false);
                 return new RecyclerView.ViewHolder(view) {
                 };
             }
